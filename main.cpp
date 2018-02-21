@@ -25,6 +25,7 @@ int main(int argc,char* argv[]) {
             meters = unit->toMeter();
             reaction_ms = reactionTime(meters);
             std::cout << reaction_ms << "ms" << std::endl;
+            delete unit;
         }
         else {
             std::cout << "Error reading value or unit" << std::endl;

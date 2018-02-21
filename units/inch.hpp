@@ -6,6 +6,7 @@
 class Inch: public Unit {
     public:
         Inch(double value);
+        ~Inch() {};
         double toMeter();
 };
 
