@@ -9,6 +9,8 @@ const double G = 9.6;
 
 int main(int argc,char* argv[]) {
     double value_num;
+    double reaction_ms;
+    double meters;
     Unit* unit;
     std::stringstream ss;
     std::string input_str;
@@ -19,7 +21,9 @@ int main(int argc,char* argv[]) {
         ss >> value_num >> unit_str;
         unit = unitFactory(value_num,unit_str);
         if(unit!=NULL) {
-            std::cout << unit->toMeter() << std::endl;
+            meters = unit->toMeter();
+            reaction_ms = reactionTime(meters);
+            std::cout << reaction_ms << "ms" << std::endl;
         }
         else {
             std::cout << "Error reading value or unit" << std::endl;
