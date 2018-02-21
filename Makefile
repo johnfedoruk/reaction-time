@@ -1,6 +1,6 @@
 CC=g++
 CFLAGS=-Wall -std=c++11 -O3
-OBJECTS=main.o
+OBJECTS=main.o units/unit.o units/centimeter.o
 TARGET=run
 
 all: $(TARGET)
