@@ -3,6 +3,9 @@
 #include <sstream>
 #include "main.hpp"
 #include "units/centimeter.hpp"
+#include <math.h>
+
+const double G = 9.6;
 
 int main(int argc,char* argv[]) {
     double value_num;
@@ -33,4 +36,8 @@ Unit* unitFactory(double value, std::string unit) {
     if(unit.compare("cm")==0)
         return new Centimeter(value);
     return NULL;
+}
+
+double reactionTime(double d) {
+    return sqrt( 2 * d / G );
 }
