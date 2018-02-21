@@ -2,8 +2,9 @@
 #include <string>
 #include <sstream>
 #include "main.hpp"
-#include "units/centimeter.hpp"
 #include <math.h>
+#include "units/centimeter.hpp"
+#include "units/inch.hpp"
 
 const double G = 9.6;
 
@@ -39,6 +40,8 @@ int main(int argc,char* argv[]) {
 Unit* unitFactory(double value, std::string unit) {
     if(unit.compare("cm")==0)
         return new Centimeter(value);
+    if(unit.compare("\"")==0)
+        return new Inch(value);
     return NULL;
 }
 
