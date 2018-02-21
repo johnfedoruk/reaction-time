@@ -3,7 +3,7 @@
 #include <sstream>
 
 int main(int argc,char* argv[]) {
-    int value;
+    float value;
     std::stringstream ss;
     std::string input;
     std::string unit;
