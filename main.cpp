@@ -39,5 +39,5 @@ Unit* unitFactory(double value, std::string unit) {
 }
 
 double reactionTime(double d) {
-    return sqrt( 2 * d / G );
+    return sqrt( 2 * d / G ) * 1000;
 }
