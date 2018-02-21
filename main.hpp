@@ -6,4 +6,6 @@
 
 Unit* unitFactory(double value, std::string unit);
 
+double reactionTime(double d);
+
 #endif
