@@ -5,8 +5,8 @@
 
 class Centimeter: public Unit {
     public:
-        Centimeter(float value);
-        float toMeter();
+        Centimeter(double value);
+        double toMeter();
 };
 
 #endif

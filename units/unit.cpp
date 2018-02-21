@@ -1,5 +1,5 @@
 #include "unit.hpp"
 
-Unit::Unit(float value) {
+Unit::Unit(double value) {
     this->value = value;
 }

@@ -3,10 +3,10 @@
 
 class Unit {
     public:
-        Unit(float value);
-        virtual float toMeter() = 0;
+        Unit(double value);
+        virtual double toMeter() = 0;
     protected:
-        float value;
+        double value;
 };
 
 #endif

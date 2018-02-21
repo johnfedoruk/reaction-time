@@ -1,8 +1,8 @@
 #include "centimeter.hpp"
 
-Centimeter::Centimeter(float value) : Unit(value) {
+Centimeter::Centimeter(double value) : Unit(value) {
     // Unit::super();
 }
-float Centimeter::toMeter() {
+double Centimeter::toMeter() {
     return this->value;
 }

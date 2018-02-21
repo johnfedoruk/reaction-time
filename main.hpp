@@ -4,6 +4,6 @@
 #include <string>
 #include "units/unit.hpp"
 
-Unit* unitFactory(float value, std::string unit);
+Unit* unitFactory(double value, std::string unit);
 
 #endif
