@@ -13,7 +13,7 @@ This is a tool for help determine your reaction time.
 You'll first need to download and build the source code.
 
 ```bash
-git clone https://github.com/johnfedoruk/reaction-speed
+git clone https://github.com/johnfedoruk/reaction-time.git
 cd reaction-speed
 make
 ```
